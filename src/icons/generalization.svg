@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="160"
+   height="90"
+   viewBox="0 0 160 90"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="generalization.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="82.006903"
+     inkscape:cy="30.624176"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1-3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-962.36216)">
+    <g
+       transform="translate(0.68572701,-5.2550974)"
+       id="layer1-6"
+       inkscape:label="Ebene 1"
+       style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         transform="translate(-5.3387218,-3.4872986)"
+         id="layer1-3"
+         style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none">
+        <g
+           transform="translate(4.6529974,8.7424378)"
+           id="layer1-5"
+           inkscape:label="Ebene 1">
+          <g
+             style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+             inkscape:label="Ebene 1"
+             id="layer1-6-2"
+             transform="translate(0.68572701,-5.2550974)">
+            <g
+               style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+               id="layer1-3-6"
+               transform="translate(-5.3387218,-3.4872986)">
+              <path
+                 inkscape:transform-center-y="-9.5437761"
+                 d="m 117.7137,1044.7358 -66.121415,0 33.060707,-57.26282 z"
+                 inkscape:randomized="0"
+                 inkscape:rounded="0"
+                 inkscape:flatsided="true"
+                 sodipodi:arg2="1.5707963"
+                 sodipodi:arg1="0.52359878"
+                 sodipodi:r2="19.087608"
+                 sodipodi:r1="38.175217"
+                 sodipodi:cy="1025.6482"
+                 sodipodi:cx="84.652992"
+                 sodipodi:sides="3"
+                 id="path4177"
+                 style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 sodipodi:type="star" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright 2017 Raffael Lorup, Ary Obenholzner, Robert Pinnisch, William Wang
+ * <p>
+ * This file is part of CHEEsy.
+ * CHEEsy is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * <p>
+ * CHEEsy is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * <p>
+ * You should have received a copy of the GNU General Public License
+ * along with CHEEsy. If not, see <http://www.gnu.org/licenses/>.
+ * -->
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.MainWindow">
+  <grid id="27dc6" binding="pnlRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1094" height="793"/>
+    </constraints>
+    <properties>
+      <maximumSize width="-1" height="-1"/>
+      <minimumSize width="-1" height="-1"/>
+      <visible value="true"/>
+    </properties>
+    <border type="empty">
+      <size top="10" left="5" bottom="5" right="5"/>
+    </border>
+    <children>
+      <grid id="9314" binding="pnlMain" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="10" bottom="5" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <grid id="d88d0" binding="pnlQuickmenu" layout-manager="GridLayoutManager" row-count="1" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="cfcf9" class="javax.swing.JButton" binding="btnSave">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <enabled value="true"/>
+                  <focusCycleRoot value="false"/>
+                  <focusPainted value="false"/>
+                  <focusTraversalPolicyProvider value="false"/>
+                  <focusable value="false"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="icons/save.png"/>
+                  <iconTextGap value="0"/>
+                  <inheritsPopupMenu value="false"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/save_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverEnabled value="true"/>
+                  <rolloverIcon value="icons/save_hover.png"/>
+                  <selected value="false"/>
+                  <text value=""/>
+                  <toolTipText value="Save"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="9132c" class="javax.swing.JButton" binding="btnUndo">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/undo.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/undo_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/undo_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Undo"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="c294c" class="javax.swing.JButton" binding="btnRedo">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <enabled value="true"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/redo.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/redo_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/redo_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Redo"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="289c7" class="javax.swing.JButton" binding="btnZoomin">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/zoomin.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/zoomin_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/zoomin_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Zoom in"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="87941" class="javax.swing.JButton" binding="btnZoomout">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <defaultCapable value="true"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/zoomout.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/zoomout_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/zoomout_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Zoom out"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="854b4" class="javax.swing.JButton" binding="btnZoomdef">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/fitview_2.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/fitview_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/fitview_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Fit view"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="1c3e1" class="javax.swing.JLabel" binding="lbStatus">
+                <constraints>
+                  <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="3e25f" class="javax.swing.JButton" binding="btnFontZoomin">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/fontzoomin.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/fontzoomin_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/fontzoomin_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Fit view"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="bcd4a" class="javax.swing.JButton" binding="btnFontZoomout">
+                <constraints>
+                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <icon value="icons/fontzoomout.png"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <opaque value="false"/>
+                  <pressedIcon value="icons/fontzoomout_selected.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="icons/fontzoomout_hover.png"/>
+                  <text value=""/>
+                  <toolTipText value="Fit view"/>
+                  <verifyInputWhenFocusTarget value="false"/>
+                </properties>
+              </component>
+              <component id="7afce" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="1" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <orientation value="1"/>
+                </properties>
+              </component>
+              <component id="f23e3" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="1" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <orientation value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="1156" binding="pnlToolbox" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="bevel-lowered"/>
+            <children>
+              <grid id="6630a" binding="pnlTools" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="0" height="0"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="empty" title="Elements" title-justification="2">
+                  <font size="14" style="1"/>
+                  <title-color color="-16777216"/>
+                </border>
+                <children>
+                  <component id="11ea4" class="javax.swing.JButton" binding="btnNewEntity">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="0" height="0"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1513240"/>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="false"/>
+                      <focusPainted value="false"/>
+                      <focusable value="false"/>
+                      <hideActionText value="true"/>
+                      <icon value="icons/entity.png"/>
+                      <text value=""/>
+                      <toolTipText value="Add Entity"/>
+                    </properties>
+                  </component>
+                  <component id="c5fda" class="javax.swing.JButton" binding="btnNewRelation">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="0" height="0"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="false"/>
+                      <focusPainted value="false"/>
+                      <focusable value="false"/>
+                      <hideActionText value="true"/>
+                      <icon value="icons/relationship.png"/>
+                      <text value=""/>
+                      <toolTipText value="Add Relationship"/>
+                    </properties>
+                  </component>
+                  <component id="ad275" class="javax.swing.JButton" binding="btnNewGeneralization">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="0" height="0"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1513240"/>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="false"/>
+                      <focusable value="false"/>
+                      <hideActionText value="true"/>
+                      <icon value="icons/generalization.png"/>
+                      <text value=""/>
+                      <toolTipText value="Add Generalization"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="27975" binding="pnlProperties" layout-manager="CardLayout" hgap="0" vgap="0" show="9b888">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="0" height="0"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="bevel-lowered" title="Properties" title-justification="2"/>
+                <children>
+                  <grid id="9b888" binding="pnlPropertiesModel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <card name="model"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                  <grid id="e143" binding="pnlPropertiesEntity" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <card name="entity"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="11996" class="javax.swing.JTextField" binding="txtNameEntity">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <component id="27c92" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Entity"/>
+                        </properties>
+                      </component>
+                      <component id="739d2" class="javax.swing.JButton" binding="btnAddAttributeEntity">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Attribute"/>
+                        </properties>
+                      </component>
+                      <component id="8c50c" class="javax.swing.JButton" binding="btnDeleteEntity">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Delete Entity"/>
+                        </properties>
+                      </component>
+                      <scrollpane id="da8b">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalScrollBarPolicy value="31"/>
+                          <verticalScrollBarPolicy value="20"/>
+                          <wheelScrollingEnabled value="true"/>
+                        </properties>
+                        <border type="empty"/>
+                        <children>
+                          <grid id="a0f5e" binding="pnlEntityAttributes" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints/>
+                            <properties>
+                              <alignmentX value="0.0"/>
+                              <alignmentY value="0.0"/>
+                              <maximumSize width="-1" height="25"/>
+                            </properties>
+                            <border type="empty"/>
+                            <children/>
+                          </grid>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="49af0" binding="pnlPropertiesRelation" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <card name="relation"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ea61b" class="javax.swing.JTextField" binding="txtNameRelation">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <component id="c2dbf" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="10"/>
+                          <text value="Relation"/>
+                        </properties>
+                      </component>
+                      <component id="70d7f" class="javax.swing.JButton" binding="btnAddAttributeRelation">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Attribute"/>
+                        </properties>
+                      </component>
+                      <component id="e348d" class="javax.swing.JButton" binding="btnAddEntity">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Entity"/>
+                        </properties>
+                      </component>
+                      <component id="d9bc6" class="javax.swing.JButton" binding="btnDeleteRelation">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Delete Relation"/>
+                        </properties>
+                      </component>
+                      <grid id="f5fb7" binding="pnlRelEntitylist" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="90"/>
+                            <preferred-size width="-1" height="90"/>
+                            <maximum-size width="-1" height="90"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="bevel-lowered"/>
+                        <children>
+                          <scrollpane id="47e9f">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <opaque value="true"/>
+                              <requestFocusEnabled value="true"/>
+                              <verticalScrollBarPolicy value="20"/>
+                              <wheelScrollingEnabled value="true"/>
+                            </properties>
+                            <border type="empty"/>
+                            <children>
+                              <grid id="10048" binding="pnlRelationEntities" layout-manager="GridBagLayout">
+                                <constraints/>
+                                <properties>
+                                  <alignmentX value="0.0"/>
+                                  <alignmentY value="0.0"/>
+                                  <autoscrolls value="false"/>
+                                  <maximumSize width="-1" height="25"/>
+                                </properties>
+                                <border type="empty"/>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                          <hspacer id="bbfd7">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                      <grid id="e65be" binding="pnlRelAttributlist" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="bevel-lowered"/>
+                        <children>
+                          <scrollpane id="86e3e">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <horizontalScrollBarPolicy value="31"/>
+                              <verticalScrollBarPolicy value="20"/>
+                              <wheelScrollingEnabled value="true"/>
+                            </properties>
+                            <border type="empty"/>
+                            <children>
+                              <grid id="da214" binding="pnlRelationAttributes" layout-manager="GridBagLayout">
+                                <constraints/>
+                                <properties>
+                                  <alignmentX value="0.0"/>
+                                  <alignmentY value="0.0"/>
+                                  <maximumSize width="-1" height="25"/>
+                                </properties>
+                                <border type="empty"/>
+                                <children/>
+                              </grid>
+                            </children>
+                          </scrollpane>
+                          <hspacer id="de568">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="b4acf" binding="pnlPropertiesGeneralization" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <card name="generalization"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="811b0" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Generalization"/>
+                        </properties>
+                      </component>
+                      <component id="6ab24" class="javax.swing.JTextField" binding="txtNameGeneralization">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <editable value="false"/>
+                          <enabled value="false"/>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <component id="50dd0" class="javax.swing.JButton" binding="btnSelectSupertype">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Select Supertype"/>
+                        </properties>
+                      </component>
+                      <component id="e3ca6" class="javax.swing.JButton" binding="btnAddSubtype">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add Subtype"/>
+                        </properties>
+                      </component>
+                      <component id="ebdf0" class="javax.swing.JButton" binding="btnDeleteGeneralization">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Delete Generalization"/>
+                        </properties>
+                      </component>
+                      <scrollpane id="9e635">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalScrollBarPolicy value="31"/>
+                          <verticalScrollBarPolicy value="20"/>
+                          <wheelScrollingEnabled value="true"/>
+                        </properties>
+                        <border type="empty"/>
+                        <children>
+                          <grid id="d801" binding="pnlGeneralizationEntities" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints/>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                        </children>
+                      </scrollpane>
+                      <component id="70c16" class="javax.swing.JTextField" binding="txtSupertype">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="61ccd" binding="pnlPropertiesAttribute" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <card name="attribute"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="3e5e8" class="javax.swing.JTextField" binding="txtNameAttribute">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="0"/>
+                        </properties>
+                      </component>
+                      <vspacer id="39408">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="fb07a" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Attribute"/>
+                        </properties>
+                      </component>
+                      <component id="6dd5c" class="javax.swing.JCheckBox" binding="chkPrimary">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Primary Key"/>
+                        </properties>
+                      </component>
+                      <component id="3aaac" class="javax.swing.JSeparator">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                      <component id="b68fe" class="javax.swing.JButton" binding="btnDeleteAttribute">
+                        <constraints>
+                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Delete Attribute"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <splitpane id="4410c" binding="pnlRootSplit">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <dividerLocation value="594"/>
+              <orientation value="0"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="13357" binding="pnlDiagramScroll">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <enabled value="true"/>
+                  <foreground color="-16777216"/>
+                  <horizontalScrollBarPolicy value="30"/>
+                  <opaque value="true"/>
+                  <verticalScrollBarPolicy value="20"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="bevel-lowered"/>
+                <children/>
+              </scrollpane>
+              <grid id="845a0" binding="pnlText" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="5" right="10"/>
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="ee024" binding="pnlEntities" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <enabled value="true"/>
+                      <foreground color="-16777216"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="bevel-lowered" title="Entities"/>
+                    <children>
+                      <component id="63201" class="javax.swing.JTextArea" binding="txtEntities">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-1"/>
+                          <editable value="false"/>
+                          <enabled value="true"/>
+                          <foreground color="-16777216"/>
+                          <opaque value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="465eb" binding="pnlRelations" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <enabled value="true"/>
+                      <foreground color="-16777216"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="bevel-lowered" title="Relations">
+                      <title-color color="-16777216"/>
+                    </border>
+                    <children>
+                      <component id="b70ef" class="javax.swing.JTextArea" binding="txtRelations">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-1"/>
+                          <editable value="false"/>
+                          <enabled value="true"/>
+                          <foreground color="-16777216"/>
+                          <opaque value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </splitpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
