@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Raffael Lorup, Ary Obenholzner, Robert Pinnisch, William Wang
+ * Copyright 2017 Gerd Holweg, Raffael Lorup, Ary Obenholzner, Robert Pinnisch, William Wang
  * <p>
  * This file is part of CHEEsy.
  * CHEEsy is free software: you can redistribute it and/or modify
@@ -14,6 +14,8 @@
  * <p>
  * You should have received a copy of the GNU General Public License
  * along with CHEEsy. If not, see <http://www.gnu.org/licenses/>.
+ * <p>
+ * The repository for this project can be found at <https://github.com/raffman/CHEEsy-ERM-Editor>.
  */
 
 package gui.model;

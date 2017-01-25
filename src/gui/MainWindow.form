@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- * Copyright 2017 Raffael Lorup, Ary Obenholzner, Robert Pinnisch, William Wang
+ * Copyright 2017 Gerd Holweg, Raffael Lorup, Ary Obenholzner, Robert Pinnisch, William Wang
  * <p>
  * This file is part of CHEEsy.
  * CHEEsy is free software: you can redistribute it and/or modify
@@ -15,7 +15,9 @@
  * <p>
  * You should have received a copy of the GNU General Public License
  * along with CHEEsy. If not, see <http://www.gnu.org/licenses/>.
- * -->
+ * <p>
+ * The repository for this project can be found at <https://github.com/raffman/CHEEsy-ERM-Editor>.
+-->
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.MainWindow">
   <grid id="27dc6" binding="pnlRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
